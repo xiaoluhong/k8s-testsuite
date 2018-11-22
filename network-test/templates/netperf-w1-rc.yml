@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: w1
-        image: endianogino/netperf:{{ .Values.images.workerVersion }}
+        image: {{ .Values.repo.url }}/endianogino/netperf:{{ .Values.images.workerVersion }}
         imagePullPolicy: {{ .Values.imagePullPolicy }}
         args:
         - --mode=worker

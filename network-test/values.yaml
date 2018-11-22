@@ -1,4 +1,6 @@
 imagePullPolicy: IfNotPresent
+repo:
+  url: "docker.io"
 images:
   orchestratorVersion: 1.1
   workerVersion: 1.1

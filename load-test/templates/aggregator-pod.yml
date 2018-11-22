@@ -8,7 +8,7 @@ spec:
   serviceAccountName: {{ if .Values.rbac.create }}aggregator{{ else }}"{{ .Values.rbac.serviceAccountName }}"{{ end }}
   containers:
   - name: aggregator
-    image: endianogino/aggregator:{{ .Values.images.aggregatorVersion }}
+    image: {{ .Values.repo.url }}/endianogino/aggregator:{{ .Values.images.aggregatorVersion }}
     imagePullPolicy: {{ .Values.imagePullPolicy }}
     args:
     - -max-replicas={{ .Values.aggregator.maxReplicas }}

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: loadbots
-        image: endianogino/vegeta-server:{{ .Values.images.loadbotVersion }}
+        image: {{ .Values.repo.url }}/endianogino/vegeta-server:{{ .Values.images.loadbotVersion }}
         imagePullPolicy: {{ .Values.imagePullPolicy }}
         args:
         - -host=webserver
