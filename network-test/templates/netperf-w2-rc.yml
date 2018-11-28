@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   name: worker2
+  namespace: {{ .Values.namespace }}
 spec:
   replicas: 1
   selector:

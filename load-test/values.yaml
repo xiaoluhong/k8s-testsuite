@@ -1,4 +1,7 @@
 imagePullPolicy: IfNotPresent
+
+namespace: load-test
+
 repo:
   url: "docker.io"
 images:

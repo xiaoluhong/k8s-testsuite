@@ -10,6 +10,7 @@ spec:
   template:
     metadata:
       name: worker3
+      namespace: {{ .Values.namespace }}
       labels:
         app: worker
         worker: w3
